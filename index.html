@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="main">
+            <div class="nav d-flex justify-between items-center max-width">
+                <h1>DojoWeather</h1>
+                <ul class="menu d-flex">
+                    <li onclick="alertMessage()">Burbank</li>
+                    <li onclick="alertMessage()">Chicago</li>
+                    <li onclick="alertMessage()">Dallas</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="temperature-option d-flex items-center justify-between max-width">
+            <h1>San Jose</h1>
+            <div class="show-temperature">
+                <label for="show-temperature">show temperature in </label>
+                
+                <select id="show-temperature" onchange="convertTemperature()">
+                    <option value="degree">&deg;C</option>
+                    <option value="fahrenheit">&deg;F</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="weather-info max-width d-flex justify-between">
+            <div class="day d-flex items-center margin-right">
+                <h3>Today</h3>
+                <img src="images/some_rain.png" alt="rain" class="weather-image">
+                <p>some rain</p>
+                <div class="temperature d-flex justify-around w-100">
+                    <h3><span class="temp">24</span>&deg;</h3>
+                    <h3><span class="temp">18</span>&deg;</h3>
+                </div>
+            </div>
+            <div class="day d-flex items-center margin-right">
+                <h3>Today</h3>
+                <img src="images/some_sun.png" alt="rain" class="weather-image">
+                <p>some sun</p>
+                <div class="temperature d-flex justify-around w-100">
+                    <h3><span class="temp">27</span>&deg;</h3>
+                    <h3><span class="temp">19</span>&deg;</h3>
+                </div>
+            </div>
+            <div class="day d-flex items-center margin-right">
+                <h3>Today</h3>
+                <img src="images/some_clouds.png" alt="rain" class="weather-image">
+                <p>some clouds</p>
+                <div class="temperature d-flex justify-around w-100">
+                    <h3><span class="temp">21</span>&deg;</h3>
+                    <h3><span class="temp">16</span>&deg;</h3>
+                </div>
+            </div>
+            <div class="day d-flex items-center">
+                <h3>Today</h3>
+                <img src="images/some_sun.png" alt="rain" class="weather-image">
+                <p>some sun</p>
+                <div class="temperature d-flex justify-around w-100">
+                    <h3><span class="temp">26</span>&deg;</h3>
+                    <h3><span class="temp">21</span>&deg;</h3>
+                </div>
+            </div>
+        </div>
+        <div class="cookie d-flex justify-between items-center max-width">
+            <img src="images/cookie.png" alt="cookie">
+            <div class="info">
+                <h3>Stop! Cookie time</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis animi molestias eum autem qui at amet aliquam quibusdam dolorem nemo. <a href="#">Read more...</a></p>
+            </div>
+            <button class="accept-btn" onclick="removeCookie()">I accept</button>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

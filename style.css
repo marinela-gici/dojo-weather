@@ -1,0 +1,102 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.justify-around {
+    justify-content: space-around;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.max-width {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.nav {
+    color: #ffffff;
+}
+
+.main {
+    background-color: #9fc5f8;
+}
+
+.menu li {
+    list-style: none;
+    padding-right: 20px;
+    font-size: x-large;
+    cursor: pointer;
+}
+
+.temperature-option {
+    border-bottom: 3px solid black;
+    margin-bottom: 20px;
+}
+
+.day {
+    flex-direction: column;
+    background-color: #eeeeee;
+    width: 100%;
+    padding: 40px 0;
+}
+
+.margin-right {
+    margin-right: 20px;
+}
+
+.weather-image {
+    height: 100px;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.temperature h3:first-child {
+    color: #cf2a27;
+}
+
+.temperature h3:nth-child(2) {
+    color: #2b78e4;
+}
+
+.cookie {
+    border: 3px solid #000000;
+    background-color: #eeeeee;
+    margin-top: 10px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.cookie img {
+    margin-left: 20px;
+}
+
+.accept-btn {
+    background-color: #9fc5f8;
+    box-shadow: 2px 5px #000000;
+    color: #000000;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.info {
+    max-width: 80%;
+}
